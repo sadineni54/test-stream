@@ -1,9 +1,8 @@
 # test-stream
 
 
-## create 2 topic ("stream", "test2")
-
- bin/kafka-console-producer.sh --broker-list localhost:9092 --topic stream --property "parse.key=true" --property "key.separator=-"
+### create 2 topic ("stream", "test2")
+     bin/kafka-console-producer.sh --broker-list localhost:9092 --topic stream --property "parse.key=true" --property "key.separator=-"
      {"key1":"a1","key2":"a2"}-{"val1":"v1","val2":"v2"}
      {"key1":"a1","key2":"a2"}-{"val1":"v1","val2":"v2"}
      {"key1":"a1","key2":"a3"}-{"val1":"v1","val2":"v3"}
